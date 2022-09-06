@@ -105,7 +105,7 @@ setMasculino(event) {
           redirect: "follow",
           body: JSON.stringify([[date,imc]])
       };
-      fetch("<<link>>?tabId=Dados", requestOptions)
+      fetch("https://v1.nocodeapi.com/lu_legora/google_sheets/MwgDpxhoOSWUMWdo?tabId=Dados", requestOptions)
           .then(response => response.text())
           .then(result => console.log(result))
           .catch(error => console.log('error', error));
@@ -182,6 +182,7 @@ setMasculino(event) {
              Enviar
              </Button>
            <Button
+             href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQS5ozgVS6H9KmWUcqH5FZRpC8EPuTl2JFHPPxERQcVO3PUTzvrBkSMATkIN_FrPuqx84W_HLNfTh15/pubhtml?gid=847509139&single=true"
              variant="contained">
              Relatório
              </Button>
